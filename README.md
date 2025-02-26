@@ -9,10 +9,11 @@
 
 This repository contains the robot code for a generic REV SparkMax based Swerve Drive using a NavX2-MXP gyroscope.
 
-The project builds on the [REV MAXSwerve Java Template](https://github.com/REVrobotics/MAXSwerve-Java-Template/), designed for an FRC swerve drive train using REV MAXSwerve Modules.
+The project builds on the [REV MAXSwerve Java Template](https://github.com/REVrobotics/MAXSwerve-Java-Template/), designed for an FRC swerve drive using REV MAXSwerve Modules.
 
-I'm not a fan of the Command-Based programming style.  Passing functions as objects doesn't sit well in my brain. So I rewrote the template to drop the command-based functionality.  I also dropped slew rate limiting just to make the code simpler (we weren't using it).
+I'm not a fan of the Command-Based programming style.  Passing functions as objects doesn't sit well in my brain. So I rewrote the template to drop the command-based functionality.  
 
+I'm attempting to remove as much as possible from this code while maintaining the basic functionality of a swerve drive.
 ---
 
 ## Getting Started
