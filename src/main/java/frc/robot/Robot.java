@@ -30,9 +30,7 @@ public class Robot extends TimedRobot {
   }
 
   @Override
-  public void robotPeriodic() {
-    swerveDrive.periodic();
-  }
+  public void robotPeriodic() {}
 
   @Override
   public void disabledInit() {}
