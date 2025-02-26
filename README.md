@@ -1,6 +1,6 @@
 # 2025 REV Swerve Template 
 
-### Malfunctionz - West High School Robotics Club
+### Team 9668 - Malfunctionz - West High School Robotics Club
 #### West High School, Knoxville, TN
 
 ---
