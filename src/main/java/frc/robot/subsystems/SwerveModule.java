@@ -22,7 +22,7 @@ import frc.robot.Constants.ModuleConstants;
 /** 
  * A class which represents a set of driving and turning motors, motor controllers, and encoders in a Swerve Module 
 */
-public class MAXSwerveModule {
+public class SwerveModule {
   private final SparkMax m_drivingSparkMax;
   private final SparkMax m_turningSparkMax;
 
@@ -38,7 +38,7 @@ public class MAXSwerveModule {
   /**
    * Constructor for a MAXSwerveModule 
    */
-  public MAXSwerveModule(int drivingCANId, int turningCANId, double chassisAngularOffset) {
+  public SwerveModule(int drivingCANId, int turningCANId, double chassisAngularOffset) {
     m_drivingSparkMax = new SparkMax(drivingCANId, MotorType.kBrushless);
     m_turningSparkMax = new SparkMax(turningCANId, MotorType.kBrushless);
 
