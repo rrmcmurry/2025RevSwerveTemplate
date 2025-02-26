@@ -11,6 +11,8 @@ This repository contains the robot code for a generic REV SparkMax based Swerve 
 
 The project builds on the [REV MAXSwerve Java Template](https://github.com/REVrobotics/MAXSwerve-Java-Template/), designed for an FRC swerve drive train using REV MAXSwerve Modules.
 
+I'm not a fan of the Command-Based programming style.  Passing functions as objects doesn't sit well in my brain. So I rewrote the template to drop the command-based functionality.  I also dropped slew rate limiting just to make the code simpler (we weren't using it).
+
 ---
 
 ## Getting Started
