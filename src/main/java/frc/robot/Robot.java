@@ -16,8 +16,7 @@ public class Robot extends TimedRobot {
   Double strafe;
   Double forward;
   Double rotate;
-  boolean fieldRelative;
-  boolean rateLimit;
+  Boolean fieldRelative;
 
   // The robot's subsystems
   private final DriveSubsystem swerveDrive = new DriveSubsystem();
@@ -49,9 +48,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
-    // Initially using field relative with rate limits
-    fieldRelative = true;
-    rateLimit = false;
+    // Initially using field relative
+    fieldRelative = true;    
   }
 
   @Override
@@ -66,7 +64,7 @@ public class Robot extends TimedRobot {
     rotate = MathUtil.applyDeadband(controller.getRightX(), 0.05);
 
     // Send controller values to swerve drive
-    swerveDrive.drive(forward, strafe, rotate, fieldRelative, rateLimit);
+    swerveDrive.drive(forward, strafe, rotate, fieldRelative);
 
   }
 
