@@ -57,9 +57,9 @@ public class Robot extends TimedRobot {
     if (controller.getBackButtonPressed()) { fieldRelative = !fieldRelative; }
     
     // Get control values from the controller and apply a deadband
-    forward = MathUtil.applyDeadband(-controller.getLeftY(), 0.05);
-    strafe = MathUtil.applyDeadband(controller.getLeftX(), 0.05);
-    rotate = MathUtil.applyDeadband(controller.getRightX(), 0.05);
+    forward = MathUtil.applyDeadband(-controller.getLeftY()*.2, 0.02);
+    strafe = MathUtil.applyDeadband(controller.getLeftX()*.2, 0.02);
+    rotate = MathUtil.applyDeadband(controller.getRightX()*.2, 0.02);
 
     // Send controller values to swerve drive
     swerveDrive.drive(forward, strafe, rotate, fieldRelative);
